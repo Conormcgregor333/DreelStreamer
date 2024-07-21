@@ -1,0 +1,238 @@
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+}
+
+.top-grad {
+  width: 100%;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  border-radius: 0 0 50% 50%;
+}
+.top-grad2 {
+  width: 100%;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  border-radius: 0 0 50% 50%;
+}
+
+.hamburger {
+  .ham1,
+  .ham2,
+  .ham3 {
+    height: 0.2rem;
+    width: 1.8rem;
+  }
+  .ham2 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+}
+.hamburger-press {
+  .ham1 {
+    transform: translateY(0.5rem) rotateZ(45deg);
+    transition: 0.3s;
+  }
+  .ham3 {
+    transform: translateY(-0.5rem) rotateZ(-45deg);
+    transition: 0.3s;
+  }
+  .ham2 {
+    transform: translateX(15rem);
+    transition: 1s;
+  }
+}
+
+.nav2 {
+  left: 50%;
+  top: 23%;
+  transform: translate(-50%, -50%);
+}
+
+#marquee .marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+#marquee .pic-container {
+  display: flex;
+  animation: marquee 10s infinite linear;
+}
+
+#marquee .pic-container .pic {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  margin-inline: 1rem;
+}
+
+#marquee .marquee-img {
+  /* width: 100%;
+  object-fit: cover; */
+
+  height: 5rem;
+  width: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #marquee .pic-container .pic {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #marquee .pic-container .pic {
+    flex-basis: 33.33%;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-125%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-186.65%);
+    }
+  }
+}
+.comments {
+  height: 45rem;
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+} */
+
+.material-symbols-outlined {
+  user-select: none;
+  -webkit-user-select: none;
+}
+#main-video {
+  width: 100%;
+  height: 100%;
+}
+.progress-bar {
+  width: 98%;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-inline: auto;
+}
+.ball {
+  display: none;
+}
+.progress-bar:hover {
+  .ball {
+    display: block;
+  }
+}
+.full {
+  width: 100% !important;
+  height: 100% !important;
+}
+.setting {
+  bottom: 15%;
+  right: 2%;
+  display: none;
+}
+.settingsBtn:hover {
+  transform: rotateZ(180deg);
+  transition: 0.5s;
+}
+@media screen and (max-width: 890px) {
+  .setting {
+    bottom: 20%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .setting {
+    bottom: 30%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .setting {
+    bottom: 40%;
+  }
+}
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 5rem; /* Full-width */
+  height: 8px; /* Specified height */
+  background: #ffffff; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  border-radius: 4px;
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover (Safari) */
+  transition: opacity 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 18px; /* Set a specific slider handle width */
+  height: 18px; /* Slider handle height */
+  border-radius: 9px;
+  background-image: linear-gradient(
+    to right,
+    rgb(242, 99, 99),
+    rgb(236, 74, 236)
+  ); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scaleup {
+  animation-name: scaleup;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-in-out;
+}
+.scaleup2 {
+  animation-name: scaleup;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+}
+.scaleup3 {
+  animation-name: scaleup;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+}
+.video-content {
+  scroll-behavior: smooth;
+}
+.video-content::-webkit-scrollbar {
+  display: none;
+}
