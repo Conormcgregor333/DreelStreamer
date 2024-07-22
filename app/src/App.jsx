@@ -160,13 +160,25 @@ function App() {
             <div className="text-center mt-1 font-bold text-xl">
               <Link to="/">
                 {" "}
-                <p>Home</p>
+                <p
+                  onClick={() => {
+                    setHam(!ham);
+                  }}
+                >
+                  Home
+                </p>
               </Link>
             </div>
             <div className="text-center mt-1 my-1 font-bold text-xl">
               <Link to="/pricing">
                 {" "}
-                <p>Pricing</p>
+                <p
+                  onClick={() => {
+                    setHam(!ham);
+                  }}
+                >
+                  Pricing
+                </p>
               </Link>
             </div>
             <div className="mx-auto font-bold text-xl">
@@ -176,7 +188,14 @@ function App() {
                   alertMessage();
                 }}
               >
-                <p className="translate-x-1">AI</p>
+                <p
+                  onClick={() => {
+                    setHam(!ham);
+                  }}
+                  className="translate-x-1"
+                >
+                  AI
+                </p>
                 <p className=" w-14 h-8 border-2 border-pink-400 rounded-md text-center scale-50 -translate-x-2">
                   new
                 </p>
@@ -184,7 +203,14 @@ function App() {
               <div className="text-center mt-1 mb-1 font-bold text-xl bg-gradient-to-r from-blue-700  to-red-400 bg-clip-text text-transparent">
                 <Link to="/sign">
                   {" "}
-                  <p className="">SignUp</p>
+                  <p
+                    onClick={() => {
+                      setHam(!ham);
+                    }}
+                    className=""
+                  >
+                    SignUp
+                  </p>
                 </Link>
               </div>
             </div>
